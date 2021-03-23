@@ -329,6 +329,7 @@ header {
     width: 22rem;
     height: 29rem;
     margin-top: 2rem;
+    position: relative;
 }
 
 .card-img-wrapper {
@@ -344,4 +345,11 @@ header {
     height: 100%;
     border-radius: .65rem;
     opacity: .8;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, .4);
 }
