@@ -345,13 +345,21 @@ header {
     height: 100%;
     border-radius: .65rem;
     opacity: .8;
+    transition: opacity .3s;
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: .5;
 }
 
 .card-info {
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     bottom: 0;
     padding: 2.5rem;
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .6);
+    transition: all .3s;
 }
 
 .card-info h2 {
@@ -366,6 +374,7 @@ header {
     font-weight: bolder;
     color: #ff4081;
     font-size: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .card-info p {
@@ -373,6 +382,7 @@ header {
     color: #eee;
     font-weight: 400;
     width: 80%;
+    margin-bottom: 2rem;
 }
 
 .card-info button {
@@ -387,4 +397,10 @@ header {
     border-radius: .5rem;
     border: none;
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+}
+
+.card:hover .card-info {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
 }
